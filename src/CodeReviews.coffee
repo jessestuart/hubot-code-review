@@ -356,31 +356,8 @@ class CodeReviews
   #     Note that the logical maximum is 60m due to hourly reminders
   # @return none
   queue: (nag_delay = process.env.HUBOT_CODE_REVIEW_REMINDER_MINUTES || 5) ->
-    minutes = nag_delay * @reminder_count
-
-    clearTimeout @current_timeout if @current_timeout
-    if Object.keys(@room_queues).length > 0
-      rooms_have_new_crs = false
-      trigger = =>
-        for room of @room_queues
-          # exclude non-existent or newly archived rooms
-          if roomExists(room, @robot)
-            active_crs = @list room
-            if active_crs["cr"].length > 0
-              rooms_have_new_crs = true
-              @send_list room
-              if minutes >= 60 and # Equal to or longer than one hour
-              minutes < 120 and # Less than 2 hours
-              (minutes %% 60) < nag_delay # Is the first occurrence after an hour
-                @robot.send { room: room }, "@here: :siren: This queue has been active for " +
-                "an hour, someone get on this. :siren:\n_Reminding hourly from now on_"
-              else if minutes > 60
-                @robot.send { room: room }, "This is an hourly reminder."
-        @reminder_count++ unless rooms_have_new_crs is false
-        if minutes >= 60
-          nag_delay = 60 # set to one hour intervals
-        @queue(nag_delay)
-      @current_timeout = setTimeout(trigger, nag_delay * 60000) # milliseconds in a minute
+    # No nagging by txbot.
+    return
 
   # Get CR slug from PR URL regex matches
   #
