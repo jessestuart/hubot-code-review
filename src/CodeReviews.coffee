@@ -13,7 +13,7 @@ EmojiDataParser = require './lib/EmojiDataParser'
 class CodeReviews
   constructor: (@robot) ->
     # coffeelint: disable=max_line_length
-    @pr_url_regex = /^(https?:\/\/github.com\/([^\/]+)\/([^\/]+)\/pull\/(\d+))(?:\/files)?\/?(\s+[#|@]?[0-9a-z_-]+)?\s*$/i
+    @pr_url_regex = /^(https?:\/\/github.com\/([^\/]+)\/([^\/]+)\/pull\/(\d+))(?:\/files)?\/?(\s+[#|@]?[0-9a-z_-]+)?\s*(\?w=1*)?$/i
     # coffeelint: enable=max_line_length
     @room_queues = {}
     @current_timeout = null
