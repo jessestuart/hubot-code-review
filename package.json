@@ -1,6 +1,6 @@
 {
   "name": "txbot-code-review",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "author": "Jesse Stuart <jesse.stuart@todaytix.com>",
   "description": "A Hubot script for GitHub code review on Slack; forked from the lovely hubot-code-review package by @alleyinteractive.",
   "main": "index.coffee",
