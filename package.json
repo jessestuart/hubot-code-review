@@ -21,7 +21,9 @@
   "scripts": {
     "test": "HUBOT_CODE_REVIEW_EMOJI_APPROVE=true node_modules/.bin/jasmine-node --verbose --coffee --color --forceexit test/",
     "lint": "node_modules/.bin/coffeelint src/",
-    "lint-tests": "eslint -c .eslintrc --ext .js ./test"
+    "lint-tests": "eslint -c .eslintrc --ext .js ./test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "githubot": "^1.0.0",
@@ -29,7 +31,8 @@
     "hubot-redis-brain": "^0.0.4",
     "moment": "^2.8.3",
     "node-schedule": "^1.0.0",
-    "punycode": "^2.0.1"
+    "punycode": "^2.0.1",
+    "snyk": "^1.41.1"
   },
   "peerDependencies": {
     "hubot-slack": "^4.3.1"
@@ -53,5 +56,6 @@
     "jasmine-custom-message": "^0.8.2",
     "jasmine-node": "^1.14.5",
     "supertest": "~3.0.0"
-  }
+  },
+  "snyk": true
 }
