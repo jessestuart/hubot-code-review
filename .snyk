@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.10.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -26,3 +26,68 @@ patch:
         patched: '2017-09-28T22:13:05.310Z'
     - hubot > express > connect > serve-static > send > debug:
         patched: '2017-09-28T22:13:05.310Z'
+    - hubot-mock-adapter > hubot > express > connect > compression > debug:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > debug:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > connect-timeout > debug:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > express-session > debug:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > finalhandler > debug:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > morgan > debug:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > body-parser > debug:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > debug:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > serve-index > debug:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > serve-static > send > debug:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > send > debug:
+        patched: '2018-01-18T22:13:57.537Z'
+  'npm:minimatch:20160620':
+    - jasmine-node > gaze > minimatch:
+        patched: '2018-01-18T22:13:57.537Z'
+    - jasmine-node > gaze > fileset > minimatch:
+        patched: '2018-01-18T22:13:57.537Z'
+    - jasmine-node > gaze > fileset > glob > minimatch:
+        patched: '2018-01-18T22:13:57.537Z'
+  'npm:ms:20170412':
+    - hubot-mock-adapter > hubot > express > debug > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > send > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > send > debug > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > debug > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > connect-timeout > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > connect-timeout > debug > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > express-session > debug > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > finalhandler > debug > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > morgan > debug > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > body-parser > debug > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > compression > debug > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > serve-index > debug > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > serve-static > send > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > serve-static > send > debug > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > serve-favicon > ms:
+        patched: '2018-01-18T22:13:57.537Z'
+  'npm:negotiator:20160616':
+    - hubot-mock-adapter > hubot > express > connect > compression > accepts > negotiator:
+        patched: '2018-01-18T22:13:57.537Z'
+    - hubot-mock-adapter > hubot > express > connect > serve-index > accepts > negotiator:
+        patched: '2018-01-18T22:13:57.537Z'

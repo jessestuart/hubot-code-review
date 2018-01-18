@@ -32,7 +32,7 @@
     "moment": "^2.8.3",
     "node-schedule": "^1.0.0",
     "punycode": "^2.0.1",
-    "snyk": "^1.41.1"
+    "snyk": "^1.69.0"
   },
   "peerDependencies": {
     "hubot-slack": "^4.3.1"
